@@ -352,10 +352,10 @@ var controller = {
 
         var file_path = req.file.path;
 
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\');
 
         //Advertencia En linux o mac
-        //var file_split = file_path.split(/);
+        var file_split = file_path.split('/');
         var file_name = file_split[3];
 
         //EXTENSIÓN DEL ARCHIVO
@@ -425,10 +425,10 @@ var controller = {
 
         var file_path = req.file.path;
 
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\');
 
         //Advertencia En linux o mac
-        //var file_split = file_path.split(/);
+        var file_split = file_path.split('/');
         var file_name = file_split[3];
         //console.log('file_name: ' + file_name);
 
