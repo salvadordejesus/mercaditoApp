@@ -1,2 +1,0 @@
-"# mercaditoApp" 
-# mercaditoApp
