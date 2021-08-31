@@ -45,9 +45,7 @@ var controller = {
                     });
                 });
                 //====================================================
-
             } else if (negocioen.length > 0) {
-
                 return res.status(400).send({
                     status: "duplicado",
                     message: "Revisa el nombre del negocio y el correo electrónico"
@@ -161,7 +159,7 @@ var controller = {
                             message: negocio
                         });
                     }).catch(error => {
-                        console.log("error 33", error);
+                        //console.log("error 33", error);
                         return res.status(500).send({
                             status: "error",
                             message: error
@@ -186,7 +184,7 @@ var controller = {
             }
 
         }).catch(err => {
-            console.log("Error aqui actualizar any negocio", err);
+            //console.log("Error aqui actualizar any negocio", err);
             return res.status(500).send({
                 status: "err",
                 message: err
@@ -306,13 +304,11 @@ var controller = {
 
 
         const negocioAuth = req.negocio_autentificado;
-        console.log(negocioAuth);
         const passwordActual = negocioAuth.password;
         const _idnegocio = negocioAuth._id;
 
         //DATOS QUE VIENE DESDE EL FORMULARIO 
         const body = req.body;
-        console.log(body);
         const passwordOld = body.passwordOld;
         const passwordNew = body.passwordNew;
 
@@ -608,7 +604,7 @@ var controller = {
         var queryMongo = Negocio.find({ "estado": false });
         var estadoParaments = req.params.estado;
 
-        console.log(estadoParaments);
+        //console.log(estadoParaments);
 
         if (estadoParaments && estadoParaments === 'Activo') {
 
@@ -639,7 +635,6 @@ var controller = {
     },
 
     uploadFileImg: (req, res) => {
-        console.log("Estas entrando aqui negocio , upload");
         try {
             if (typeof req.negocio_autentificado._id === 'undefined') {
                 return res.status(401).send({
@@ -669,10 +664,10 @@ var controller = {
         //ACHIVO RECOGIDO POR PARAMETRO
         var file_path = req.file.path;
 
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\');
 
         //Advertencia En linux o mac
-        //var file_split = file_path.split(/);
+        var file_split = file_path.split('/');
         var file_name = file_split[2];
 
         //EXTENSIÓN DEL ARCHIVO
@@ -744,7 +739,7 @@ var controller = {
 
         //ID DEL NEGOCIO
         var _idNegocio = req.params._id;
-        console.log("subida de imagen " + _idNegocio);
+        //console.log("subida de imagen " + _idNegocio);
 
 
         var file_name = 'Imagen no subido';
@@ -759,10 +754,10 @@ var controller = {
         //ACHIVO RECOGIDO POR PARAMETRO
         var file_path = req.file.path;
 
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\');
 
         //Advertencia En linux o mac
-        //var file_split = file_path.split(/);
+        var file_split = file_path.split('/');
         var file_name = file_split[2];
 
         //EXTENSIÓN DEL ARCHIVO
@@ -1108,7 +1103,7 @@ async function updateLineaNegocio(_id, body) {
 async function crearNegocio(_idproducto, body) {
     //CUADO SE REGISTRA EL NEGOCIO, ESTARA ACTIVADO POR 2 MESES
     const fechaMas2meses = new Date();
-    fechaMas2meses.setMonth(fechaMas2meses.getMonth() + 2);
+    fechaMas2meses.setMonth(fechaMas2meses.getMonth() + 1);
 
     let NegocioInsert = new Negocio({
         _id: _idproducto,

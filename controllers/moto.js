@@ -769,7 +769,7 @@ var controller = {
         eliminarFolderNegocio(pathJoin).then(respuestaEliminacion => {
 
             if (respuestaEliminacion == "DIRECTORIO_ELIMINADO") {
-                console.log(respuestaEliminacion);
+                //console.log(respuestaEliminacion);
             } else {
                 return res.status(500).send(
                     {

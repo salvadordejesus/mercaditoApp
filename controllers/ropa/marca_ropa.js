@@ -174,7 +174,7 @@ var controller = {
 
             } else if (list_marca.length >= 2) {
 
-                return res.status(409).send({
+                return res.status(200).send({
                     status: "duplicado",
                     message: "La marca de la ropa ya existe!"
                 });

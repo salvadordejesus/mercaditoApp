@@ -29,8 +29,7 @@ const storage = multer.diskStorage(
             var rutaDestino = './uploads/';
             
             rutaDestino += _idNegocio +'/servicios';
-            console.log("rutaDestino",rutaDestino);
-
+            
             cb( null , rutaDestino );
          
         },

@@ -199,10 +199,10 @@ var controller = {
 
         var file_path = req.file.path;
 
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\');
 
         //Advertencia En linux o mac
-        //var file_split = file_path.split(/);
+        var file_split = file_path.split('/');
         var file_name = file_split[1];
 
         //EXTENSIÓN DEL ARCHIVO
@@ -241,7 +241,7 @@ var controller = {
                 });
     
             }).catch(err => {
-                console.log(err);
+                //console.log(err);
                 return res.status(500).send({
                     status: "error",
                     message: err

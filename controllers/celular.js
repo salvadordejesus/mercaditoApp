@@ -472,7 +472,7 @@ var controller = {
             });
         }
 
-        console.log(req.file.path);
+        //console.log(req.file.path);
 
         var file_name = 'Imagen no subido';
 
@@ -596,7 +596,7 @@ var controller = {
 
         const _nameImage = req.params.nameImage;
 
-        console.log("name imagen", _nameImage);
+        //console.log("name imagen", _nameImage);
 
         //RUTA DEL ARCHIVO A ELIMINAR
         const rutaArchivoEliminar = './uploads/' + _idNegocio + '/celulares/' + _nameImage;
@@ -640,7 +640,7 @@ var controller = {
         eliminarFolderNegocio(pathJoin).then(respuestaEliminacion => {
 
             if (respuestaEliminacion == "DIRECTORIO_ELIMINADO") {
-                console.log(respuestaEliminacion);
+                //console.log(respuestaEliminacion);
             } else {
                 return res.status(500).send(
                     {

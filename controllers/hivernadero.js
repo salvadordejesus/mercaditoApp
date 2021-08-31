@@ -344,7 +344,7 @@ var controller = {
     },
     updateStatus: (req, res) => {
         var _id_negocio = req.negocio_autentificado._id;
-        console.log("_id " + _id_negocio);
+        //console.log("_id " + _id_negocio);
 
         var _id_producto = req.body._id;
         var estado = req.body.estado;
@@ -697,7 +697,7 @@ var controller = {
         eliminarFolderNegocio(pathJoin).then(respuestaEliminacion => {
 
             if (respuestaEliminacion == "DIRECTORIO_ELIMINADO") {
-                console.log(respuestaEliminacion);
+               // console.log(respuestaEliminacion);
             } else {
                 return res.status(500).send(
                     {

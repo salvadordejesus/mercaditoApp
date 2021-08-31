@@ -195,7 +195,7 @@ var controller = {
                         message: "Producto no encontrado"
                     });
                 }
-                console.log(listProducto);
+                //console.log(listProducto);
                 return res.status(200).send({
                     status: "success",
                     message: listProducto
@@ -474,7 +474,7 @@ var controller = {
             let rutaArchivoEliminar = './uploads/' + _idNegocio + '/plancha/' + file_name;
 
             fs.exists(rutaArchivoEliminar, (exists) => {
-                console.log(exists);
+                //console.log(exists);
 
                 if (exists) {
 
@@ -745,7 +745,7 @@ var controller = {
         eliminarFolderNegocio(pathJoin).then(respuestaEliminacion => {
 
             if (respuestaEliminacion == "DIRECTORIO_ELIMINADO") {
-                console.log(respuestaEliminacion);
+                //console.log(respuestaEliminacion);
             } else {
                 return res.status(500).send(
                     {

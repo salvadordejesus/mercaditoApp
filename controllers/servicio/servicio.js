@@ -96,7 +96,7 @@ var controller = {
 
                 listService.forEach((servicios, index, data) => {
 
-                    console.log(servicios);
+                    //console.log(servicios);
                     servicios['servicios'].forEach((servicio, index, data) => {
 
                         let estado_recuperado = servicio['estado'];
@@ -474,10 +474,10 @@ var controller = {
 
         var file_path = req.file.path;
 
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\');
 
         //Advertencia En linux o mac
-        //var file_split = file_path.split(/);
+        var file_split = file_path.split('/');
         var file_name = file_split[3];
         //console.log('file_name: ' + file_name);
 
@@ -608,7 +608,7 @@ var controller = {
                 message: "Usuario no identificado"
             });
         }
-        console.log("Subida de imagen en servicio....");
+       
         var file_name = 'Imagen no subido';
 
         if (!req.file) {
@@ -620,10 +620,10 @@ var controller = {
 
         var file_path = req.file.path;
 
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\');
 
         //Advertencia En linux o mac
-        //var file_split = file_path.split(/);
+        var file_split = file_path.split('/');
         var file_name = file_split[3];
 
         //EXTENSIÓN DEL ARCHIVO
@@ -761,7 +761,7 @@ var controller = {
         eliminarFolderNegocio(pathJoin).then(respuestaEliminacion => {
 
             if (respuestaEliminacion == "DIRECTORIO_ELIMINADO") {
-                console.log(respuestaEliminacion);
+                //console.log(respuestaEliminacion);
             } else {
                 return res.status(500).send(
                     {

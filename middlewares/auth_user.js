@@ -4,7 +4,7 @@ const config = require('../config/development.json');
 let verificarToken = (req, res, next) => {
     
     let token = req.get('Authorization');
-    console.log("REcibiendo token", token);
+    //console.log("REcibiendo token", token);
     jwt.verify(token, config.configToken.SEED, (err, decoded) => {
         
         if (err) {

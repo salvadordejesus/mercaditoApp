@@ -8,7 +8,6 @@ var path = require('path'); //PARA OBTENER LAS RUTAS DE LAS CARPETAS
 var controller = {
 
     saveData: (req, res) => {
-        console.log("guardar", req.body);
         
         const _idproducto = new mongoose.Types.ObjectId();
         
@@ -29,7 +28,7 @@ var controller = {
             });
 
         }).catch(err => {
-            console.log(err);
+            //console.log(err);
             return res.status(500).send({
                 status: "error",
                 message: err
@@ -56,7 +55,7 @@ var controller = {
             });
 
         }).catch(err => {
-            console.log(err);
+            //console.log(err);
             return res.status(500).send({
                 status: "error",
                 message: err
@@ -101,10 +100,10 @@ var controller = {
 
         var file_path = req.file.path;
 
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\');
 
         //Advertencia En linux o mac
-        //var file_split = file_path.split(/);
+        var file_split = file_path.split('/');
         var file_name = file_split[3];
 
         //EXTENSIÓN DEL ARCHIVO

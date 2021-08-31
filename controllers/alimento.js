@@ -11,7 +11,7 @@ var controller = {
 
         try {
             if (typeof req.negocio_autentificado._id === 'undefined') {
-                console.log(req.negocio_autentificado._id);
+                //console.log(req.negocio_autentificado._id);
                 return res.status(401).send({
                     status: "error",
                     message: "Usuario no identificado"
@@ -595,7 +595,7 @@ var controller = {
 
         const _nameImage = req.params.nameImage;
 
-        console.log("name imagen", _nameImage);
+        //console.log("name imagen", _nameImage);
 
         //RUTA DEL ARCHIVO A ELIMINAR
         const rutaArchivoEliminar = './uploads/' + _idNegocio + '/alimento/' + _nameImage;
@@ -639,7 +639,7 @@ var controller = {
         eliminarFolderNegocio(pathJoin).then(respuestaEliminacion => {
 
             if (respuestaEliminacion == "DIRECTORIO_ELIMINADO") {
-                console.log(respuestaEliminacion);
+               // console.log(respuestaEliminacion);
             } else {
                 return res.status(500).send(
                     {

@@ -12,8 +12,7 @@ var controller = {
         var email=req.body.correo;
         var password=req.body.password;
 
-        Usuario.findOne({correo: email})
-        .then(datos =>{
+        Usuario.findOne({correo: email}).then(datos =>{
             
             if(datos){
                 console.log("usuario, ",datos);
