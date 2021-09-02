@@ -15,7 +15,7 @@ mongoose.connect(config.configDB.HOST,{ useNewUrlParser: true , useUnifiedTopolo
 
              //Crear Servidor y ponerme a escuchar peticiones HTTP
              app.listen(port, () =>{
-                  console.log('Servidor corriendo en http://localhost:'+port);
+                  //console.log('Servidor corriendo en http://localhost:'+port);
              });
         });
 
