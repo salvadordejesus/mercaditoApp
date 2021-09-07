@@ -736,12 +736,12 @@ const servicioSchema = Schema({
         precio: { type: Number, required: true },
         precio_anterior: { type: Number, required: true },
         vistas: { type: Number, default: 0 },
-        imagen: [imagenes],
         fecha: { type: Date, default: Date.now },
         //FECHAS DE PROMOCION
         fecha_inicio: { type: Date, default: null },
         fecha_fin: { type: Date, default: null },
         estado: { type: Boolean, default: true },
+        imagen: [imagenes],
         comentarios: [comentarioSchema]
 });
 
