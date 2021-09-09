@@ -12,6 +12,7 @@
     --color_azul:#0b5ed7;
     --color_table:#f2f2f2;
     --color_textencabezado:#ffea00;
+    --color_menu:#51d7e1;
 }
 
 body, html {
@@ -1296,7 +1297,7 @@ ng-container > td  {
 }
 .button-menu:hover{
   color: var(--color_text);
-  background: var(--color_azul) ;
+  background: var(--color_menu) ;
 }
 
 .btn-Acciones{
@@ -1319,7 +1320,7 @@ ng-container > td  {
 /*CONTENEDOR TABLAS*/
 .container-tables{
     width: 100%;
-    min-height: 650px;
+    min-height: 780px;
     text-align: center;     
 }
 .contenedor-search-table{
@@ -1426,8 +1427,22 @@ table td {
         padding-left: 15px !important;
     }
 
+    .contenedor-search-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .button-return{
-        width: 15%;
+        width: 25%;
+    
+    }
+    .button-menu{
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        margin-top: 6px;
     }
 
 
@@ -1455,9 +1470,10 @@ table td {
     }
     .container-tables{
         width: 50%;
-        height: 100%;
+        min-height: 750px;
         text-align: center;     
     }
+    
 }
 
 
