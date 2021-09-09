@@ -73,7 +73,7 @@ var controller = {
 
         });
 
-    }, //FIN DEL METODO GUARDAR ==================================
+    }, //FIN DEL METODO GUARDAR 
 
     getAllProductNegocio: (req, res) => {
 
