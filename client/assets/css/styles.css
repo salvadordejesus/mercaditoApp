@@ -76,7 +76,6 @@ a {
 
 .container-formularioDatosNegocio{
    width: 100%;
-
 }
 
 /*clearfix */
@@ -338,7 +337,7 @@ a:hover {
 
 /*FORMULARIOS*/
 .mid-form-negocio .btn{ 
-    width: 22%;
+    width: 25%;
     height: 30px;
     border-radius: 25px;
     margin: 1rem 0;
@@ -1379,8 +1378,153 @@ table td {
 */
 
 
+/*
+------------------ Mediaqueries ----------------------------------
+*/
 
-/*Mediaqueries*/
+@media screen and (min-width:320px) and (max-width:480px){
+    .container-formularios{
+        width: 100%;
+       
+    }
+    .mid-form-negocio{
+        width: 95%;
+      
+    }
+    .container-sidebar{
+     display: none;
+        
+    }
+
+    /* FORMULARIO DE  LOGIN */
+    .login{
+        min-height:680px;
+    }
+   
+    
+    .mid-form{  
+        transform: translate(0%,15%);
+        padding: 40px !important;
+        width: 75% !important;
+    }
+
+    .mid-form-negocio .btn{
+        width: 30% ;
+    }
+
+    .div-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .size{
+        width: 30%
+    }
+
+    .mat-elevation-z8{
+        overflow-x: scroll;
+          
+    }
+    th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+        padding-left: 15px !important;
+    }
+
+    .contenedor-search-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-return{
+        width: 25%;
+    
+    }
+    .button-menu{
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        margin-top: 6px;
+    }
+
+
+    /*Estilo del mensaje */
+    .hover-message:hover > #msj-seleccion{
+       display: none;
+    }
+   
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .container-formularios{
+        width: 100%;
+       
+    }
+    .mid-form-negocio{
+        width: 95%;
+      
+    }
+    .container-sidebar{
+     display: none;
+        
+    }
+
+    /* FORMULARIO DE  LOGIN */
+    .login{
+        min-height:680px;
+    }
+   
+    
+    .mid-form{  
+        transform: translate(0%,15%);
+        padding: 40px !important;
+        width: 75% !important;
+    }
+
+    .mid-form-negocio .btn{
+        width: 30% ;
+    }
+
+    .div-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .size{
+        width: 30%
+    }
+
+    .mat-elevation-z8{
+        overflow-x: scroll;
+          
+    }
+    th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+        padding-left: 15px !important;
+    }
+
+    .contenedor-search-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-return{
+        width: 25%;
+    
+    }
+    .button-menu{
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        margin-top: 6px;
+    }
+
+
+    /*Estilo del mensaje */
+    .hover-message:hover > #msj-seleccion{
+       display: none;
+    }
+  
+}
+
 @media screen and (min-width:320px) and (max-width:568px){
     .container-formularios{
         width: 100%;
@@ -1454,6 +1598,380 @@ table td {
    
 }
 
+@media screen and (min-width:570px) and (max-width:690px){
+    .container-formularios{
+        width: 100%;
+       
+    }
+    .mid-form-negocio{
+        width: 95%;
+      
+    }
+    .container-sidebar{
+     display: none;
+        
+    }
+
+    /* FORMULARIO DE  LOGIN */
+    .login{
+        min-height:680px;
+    }
+   
+    
+    .mid-form{  
+        transform: translate(0%,15%);
+        padding: 40px !important;
+        width: 75% !important;
+    }
+
+    .mid-form-negocio .btn{
+        width: 30% ;
+    }
+
+    .div-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .size{
+        width: 30%
+    }
+
+    .mat-elevation-z8{
+        overflow-x: scroll;
+          
+    }
+    th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+        padding-left: 15px !important;
+    }
+
+    .contenedor-search-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-return{
+        width: 25%;
+    
+    }
+    .button-menu{
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        margin-top: 6px;
+    }
+
+
+    /*Estilo del mensaje */
+    .hover-message:hover > #msj-seleccion{
+       display: none;
+    }
+
+   
+}
+
+
+@media screen and (min-width:700px) and (max-width:690px){
+    .container-formularios{
+        width: 100%;
+       
+    }
+    .mid-form-negocio{
+        width: 95%;
+      
+    }
+    .container-sidebar{
+     display: none;
+        
+    }
+
+    /* FORMULARIO DE  LOGIN */
+    .login{
+        min-height:680px;
+    }
+   
+    
+    .mid-form{  
+        transform: translate(0%,15%);
+        padding: 40px !important;
+        width: 75% !important;
+    }
+
+    .mid-form-negocio .btn{
+        width: 30% ;
+    }
+
+    .div-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .size{
+        width: 30%
+    }
+
+    .mat-elevation-z8{
+        overflow-x: scroll;
+          
+    }
+    th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+        padding-left: 15px !important;
+    }
+
+    .contenedor-search-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-return{
+        width: 25%;
+    
+    }
+    .button-menu{
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        margin-top: 6px;
+    }
+
+
+    /*Estilo del mensaje */
+    .hover-message:hover > #msj-seleccion{
+       display: none;
+    }
+
+   
+}
+
+@media screen and (min-width:690px) and (max-width:639px){
+    .container-formularios{
+        width: 100%;
+       
+    }
+    .mid-form-negocio{
+        width: 95%;
+      
+    }
+    .container-sidebar{
+     display: none;
+        
+    }
+
+    /* FORMULARIO DE  LOGIN */
+    .login{
+        min-height:680px;
+    }
+   
+    
+    .mid-form{  
+        transform: translate(0%,15%);
+        padding: 40px !important;
+        width: 75% !important;
+    }
+
+    .mid-form-negocio .btn{
+        width: 30% ;
+    }
+
+    .div-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .size{
+        width: 30%
+    }
+
+    .mat-elevation-z8{
+        overflow-x: scroll;
+          
+    }
+    th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+        padding-left: 15px !important;
+    }
+
+    .contenedor-search-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-return{
+        width: 25%;
+    
+    }
+    .button-menu{
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        margin-top: 6px;
+    }
+
+
+    /*Estilo del mensaje */
+    .hover-message:hover > #msj-seleccion{
+       display: none;
+    }
+
+}
+
+@media screen and (min-width:800px) and (max-width:390px){
+    .container-formularios{
+        width: 100%;
+       
+    }
+    .mid-form-negocio{
+        width: 95%;
+      
+    }
+    .container-sidebar{
+     display: none;
+        
+    }
+
+    /* FORMULARIO DE  LOGIN */
+    .login{
+        min-height:680px;
+    }
+   
+    
+    .mid-form{  
+        transform: translate(0%,15%);
+        padding: 40px !important;
+        width: 75% !important;
+    }
+
+    .mid-form-negocio .btn{
+        width: 30% ;
+    }
+
+    .div-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .size{
+        width: 30%
+    }
+
+    .mat-elevation-z8{
+        overflow-x: scroll;
+          
+    }
+    th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+        padding-left: 15px !important;
+    }
+
+    .contenedor-search-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-return{
+        width: 25%;
+    
+    }
+    .button-menu{
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        margin-top: 6px;
+    }
+
+
+    /*Estilo del mensaje */
+    .hover-message:hover > #msj-seleccion{
+       display: none;
+    }
+
+}
+
+
+
+
+@media screen and (min-width:690px) and (max-width:1199px){
+    .container-formularios{
+        width: 100%;
+       
+    }
+    .mid-form-negocio{
+        width: 80%;
+      
+    }
+    
+    .container-sidebar{
+     display: none;
+        
+    }
+
+    /* FORMULARIO DE  LOGIN */
+    .login{
+        min-height:680px;
+    }
+   
+    
+    .mid-form{  
+        transform: translate(0%,15%);
+        padding: 40px !important;
+        width: 75% !important;
+    }
+
+    .mid-form-negocio .btn{
+        width: 30% ;
+    }
+
+    .div-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .size{
+        width: 30%
+    }
+
+    .mat-elevation-z8{
+        overflow-x: scroll;
+          
+    }
+    th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+        padding-left: 15px !important;
+    }
+
+    .contenedor-search-table{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-return{
+        width: 25%;
+    
+    }
+    .button-menu{
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        margin-top: 6px;
+    }
+
+    /*Estilo del mensaje */
+    .hover-message:hover > #msj-seleccion{
+       display: none;
+    }
+   
+}
+
+
+@media screen and (min-width:900px) and (max-width:1440px){
+    .mid-form{  
+        padding: 40px !important;
+        width: 50% !important;
+    }   
+}
+
 @media screen and (min-width:768px) and (max-width:1024px){
     /* FORMULARIO DE  LOGIN */
     .login{
@@ -1468,20 +1986,23 @@ table td {
     .mid-form-negocio .btn{
         width: 50% !important;
     }
-    .container-tables{
-        width: 50%;
-        min-height: 750px;
-        text-align: center;     
-    }
-    
+        
 }
 
+@media screen and (min-width:1200px) and (max-width:1300px){
 
-@media screen and (min-width:1200px) and (max-width:1920px){
+    .mid-form{  
+        padding: 40px !important;
+        width: 50% !important;
+    }
+  
+}
+
+@media screen and (min-width:1400px) and (max-width:1900px){
 
     .mid-form{  
         padding: 40px !important;
         width: 25% !important;
     }
-    
+  
 }
